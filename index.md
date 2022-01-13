@@ -1,9 +1,7 @@
-**yoyoyo**
+# **WELCOME**
+## Julia Poon
 
-*my name is Julia*
-
-# whats up
-## your mom
+[Lab Report 1] ()
 [Watch this to see how I spend my free time](https://www.youtube.com/watch?v=crfrKqFp0Zg)
 
 **wowowow**
