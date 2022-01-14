@@ -1,5 +1,5 @@
 # **WELCOME**
-## Julia Poon
+## My name is Julia and I am an Economics & International Relations student at UCSD, minoring in Computer Science. Woohoo!
 
 [Lab Report 1](lab-report-1-week-2.html)
 
