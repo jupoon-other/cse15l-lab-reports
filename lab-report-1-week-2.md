@@ -45,7 +45,7 @@ Try running some commands in your terminal in VS Code, both before and after ssh
 
 Here's what a terminal running some commands may look like:
 
-![Image](https://keep.google.com/u/1/media/v2/1cwv7e6kFxvSbT3T3c0MrqdtfFF0Dh1BH6wYBppE8luHAR93yJ3LcmlXR4Giv6w/1VJ8PMoIrCcLZdX47I_AE2yYZlgVgoBQWuhZwAi1LJIHSf2CMy0sRBcFbhDy2?sz=512&accept=image%2Fgif%2Cimage%2Fjpeg%2Cimage%2Fjpg%2Cimage%2Fpng%2Cimage%2Fwebp)
+![Image](ss_three.png)
 
 To log out of your remote server, you can do Ctrl + D and then the command `exit`.
 
@@ -74,12 +74,14 @@ class WhereAmI
 * Then log in to ieng6 with ssh again.
 * Using `ls`, you should be able to see the file you created in your directory! This means you'll be able to run your file from the Dungeon computer.
 
+![Image](ss_four.png)
 
 #### **Step 5: Setting an SSH Key**
 Let's create an SSH Key so we don't have to re-type our password everytime we log in or run a `scp` command on this computer.
 * Run `ssh-keygen` on the terminal of your client computer
 * Then run on your terminal what you need to match the following:
 
+![Image](ss_five.png)
 
 * Copy the public key to your `.ssh` directory by running the following, replacing with the appropriate names and path you saw in the command above:
 
@@ -94,6 +96,7 @@ $ scp /Users/joe/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys
 ```
 After you enter in that last command and enter in your password once again, you won't ever have to retype your password on your client computer again! Notice how it does not prompt for a password when we log in using `ssh` now:
  
+![Image](ss_six.png)
  
 #### **Step 6: Optimizing Remote Running**
 Now you can use what you learned to make the process of remotely editing your programs even easier. Here are just two examples of things you can do to optimize running remotely:
@@ -107,6 +110,9 @@ Now you can use what you learned to make the process of remotely editing your pr
             cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI
 
 Here's what you could see after trying both those commands:
+
+![Image](ss_seven.png)
+
 
 #### **And that's a wrap! With just a bit more practice, you'll be a pro at creating, moving, editing, and running files back and forth between your client and server. Best of luck in your future CSE adventures! **
 
