@@ -89,5 +89,8 @@ $ <logout>
 # back on client
 $ scp /Users/joe/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys
 ```
-            
+ After you enter in that last command and enter in your password once again, you won't ever have to retype your password on your client computer again! Notice how it does not prompt for a password when we log in using `ssh` now:
+ 
+ 
 #### **Step 6: Optimizing Remote Running**
+
