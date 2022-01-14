@@ -35,8 +35,19 @@ Success! You have successfully connected your computer to one of the ones in the
 
 
 #### **Step 3: Trying Some Commands**
+Try running some commands in your terminal in VS Code, both before and after ssh-ing. Here are some examples of common commands you can run:
+* `ls` - shows files
+* `mkdir`- makes a folder
+* `cd` - changes directory
+* `ls -lat` - shows files with more information
+* `pwd` - prints working directory
+
+Here's what a terminal running some commands may look like:
+
+To log out of your remote server, you can do Ctrl + D and then the command `exit`.
 
 #### **Step 4: Moving Files with `scp`**
+
 
 #### **Step 5: Setting an SSH Key**
 
