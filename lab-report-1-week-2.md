@@ -3,7 +3,7 @@
 
 [HOME](https://jupoon.github.io/cse15l-lab-reports/)
 
-#### Tutorial: Getting Started in CSE 15L
+#### **Tutorial: Getting Started in CSE 15L**
 Welcome to CSE 15L! This is your comprehensive guide on how to log in to a course-specific account with `ieng6`. Without further ado, let's get started!
 
 #### **Step 1: Installing VS Code**
@@ -11,12 +11,23 @@ Go to the [Visual Studio Code](https://code.visualstudio.com/) website and follo
 
 ![Image](screenshot_one.png)
 
-#### Step 2
+The great thing about VS Code is that there are many available themes you can use to customize the way you want! Dark Mode is the way to go.
 
-#### Step 3
+#### **Step 2: Remotely Connecting**
+* Install [OpenSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
+* Look up your course-specific account for CSE 15L [here](https://sdacs.ucsd.edu/~icc/index.php)
+* Go to your newly installed **VS Code** and open up a **New Terminal**.
+* Enter in the following, replacing 'zz' with the letters on your course-specific account:
+``` ssh cs15lwi22zz@ieng6.ucsd.edu ```
+* After hitting enter, type 'yes' if you are prompted the following:
+``` The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established. ```
+``` RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec. ```
+``` Are you sure you want to continue connecting (yes/no/[fingerprint])? ```
 
-#### Step 4
+#### **Step 3: Trying Some Commands**
 
-#### Step 5
+#### **Step 4: Moving Files with `scp`**
 
-#### Step 6
+#### **Step 5: Setting an SSH Key**
+
+#### **Step 6: Optimizing Remote Running**
