@@ -1,7 +1,7 @@
 # **LAB REPORT 1**
 ### 01-14-2021
 
-<pre>[HOME](https://jupoon.github.io/cse15l-lab-reports/)       [CATS](https://jupoon.github.io/cse15l-lab-reports/cats.md) <pre>
+<pre>[HOME](https://jupoon.github.io/cse15l-lab-reports/)       [CATS](https://jupoon.github.io/cse15l-lab-reports/cats.md) </pre>
 
 #### **Tutorial: Getting Started in CSE 15L**
 Welcome to CSE 15L! This is your comprehensive guide on how to log in to a course-specific account with `ieng6`. Without further ado, let's get started!
