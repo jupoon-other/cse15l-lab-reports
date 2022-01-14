@@ -33,6 +33,7 @@ This step will get your personal computer connected with one of the computers in
 
 Success! You have successfully connected your computer to one of the ones in the CSE Dungeon! Their souls are bound together forever now. You should get an output similar to this upon successful login:
 
+![Image](ss_two.png)
 
 #### **Step 3: Trying Some Commands**
 Try running some commands in your terminal in VS Code, both before and after ssh-ing. Here are some examples of common commands you can run:
@@ -43,6 +44,8 @@ Try running some commands in your terminal in VS Code, both before and after ssh
 * `pwd` - prints working directory
 
 Here's what a terminal running some commands may look like:
+
+![Image](https://keep.google.com/u/1/media/v2/1cwv7e6kFxvSbT3T3c0MrqdtfFF0Dh1BH6wYBppE8luHAR93yJ3LcmlXR4Giv6w/1VJ8PMoIrCcLZdX47I_AE2yYZlgVgoBQWuhZwAi1LJIHSf2CMy0sRBcFbhDy2?sz=512&accept=image%2Fgif%2Cimage%2Fjpeg%2Cimage%2Fjpg%2Cimage%2Fpng%2Cimage%2Fwebp)
 
 To log out of your remote server, you can do Ctrl + D and then the command `exit`.
 
@@ -103,7 +106,7 @@ Now you can use what you learned to make the process of remotely editing your pr
 
             cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI
 
-Here's what youc ould see after trying both those commands:
+Here's what you could see after trying both those commands:
 
 #### **And that's a wrap! With just a bit more practice, you'll be a pro at creating, moving, editing, and running files back and forth between your client and server. Best of luck in your future CSE adventures! **
 
