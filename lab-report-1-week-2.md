@@ -6,7 +6,8 @@
 #### Tutorial: Getting Started in CSE 15L
 Welcome to CSE 15L! This is your comprehensive guide on how to log in to a course-specific account with `ieng6`. Without further ado, let's get started!
 
-#### Step 1
+#### **Step 1: Installing VS Code**
+Go to the [Visual Studio Code](https://code.visualstudio.com/) website and follow the instructions for download and installation on your device. Once you open it, you will get a screen that looks similar to this:
 
 #### Step 2
 
