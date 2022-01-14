@@ -20,11 +20,12 @@ This step will get your personal computer connected with one of the computers in
 * Look up your course-specific account for CSE 15L [here](https://sdacs.ucsd.edu/~icc/index.php)
 * Go to your newly installed **VS Code** and open up a **New Terminal**.
 * Enter in the following, replacing 'zz' with the letters on your course-specific account:
+
 ``` ssh cs15lwi22zz@ieng6.ucsd.edu ```
 
 * After hitting enter, type 'yes' if you are prompted the following:
 
-``` 
+```
 The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established. 
 RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec. 
 Are you sure you want to continue connecting (yes/no/[fingerprint])? 
