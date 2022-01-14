@@ -47,6 +47,29 @@ Here's what a terminal running some commands may look like:
 To log out of your remote server, you can do Ctrl + D and then the command `exit`.
 
 #### **Step 4: Moving Files with `scp`**
+To move files back and forth between your computer and its soulmate in the CSE Dungeons, you will need to learn how to use the command `scp`.
+
+* Create any java file in VS Code on your computer. If you want to follow along with this example, name it `WhereAmI.java` and put the following contents into it:
+
+```
+class WhereAmI 
+{
+  public static void main(String[] args) 
+  {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+```
+* Run this command in the terminal from the directory you made this file, replacing 'zz' with the letters from your course account:
+
+            scp WhereAmI.java cs15lwi22zz@ieng6.ucsd.edu:~/
+
+* Log in with the same password you use to log in with `ssh` when prompted for a password
+* Then log in to ieng6 with ssh again.
+* Using ls, you should be able to see the file you created in your directory! This means you'll be able to run your file from the Dungeon computer.
 
 
 #### **Step 5: Setting an SSH Key**
