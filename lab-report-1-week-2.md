@@ -21,7 +21,7 @@ This step will get your personal computer connected with one of the computers in
 * Go to your newly installed **VS Code** and open up a **New Terminal**.
 * Enter in the following, replacing 'zz' with the letters on your course-specific account:
 
-                    ```         ssh cs15lwi22zz@ieng6.ucsd.edu ```
+            ```ssh cs15lwi22zz@ieng6.ucsd.edu ```
 
 * After hitting enter, type 'yes' if you are prompted the following:
 
