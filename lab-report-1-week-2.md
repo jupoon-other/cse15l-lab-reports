@@ -89,8 +89,25 @@ $ <logout>
 # back on client
 $ scp /Users/joe/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys
 ```
- After you enter in that last command and enter in your password once again, you won't ever have to retype your password on your client computer again! Notice how it does not prompt for a password when we log in using `ssh` now:
+After you enter in that last command and enter in your password once again, you won't ever have to retype your password on your client computer again! Notice how it does not prompt for a password when we log in using `ssh` now:
  
  
 #### **Step 6: Optimizing Remote Running**
+Now you can use what you learned to make the process of remotely editing your programs even easier. Here are just two examples of things you can do to optimize running remotely:
+* **write a command in quotes** directly after an ssh command to directly run the command on the remote server, then exit.
+
+            ssh cs15lwi22zz@ieng6.ucsd.edu "ls"
+            # this command will log in and list the home directory on the remote server
+
+* **use semicolons to run multiple commands** in the same line. Here's an example:
+
+            cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI
+
+Here's what youc ould see after trying both those commands:
+
+#### **And that's a wrap! With just a bit more practice, you'll be a pro at creating, moving, editing, and running files back and forth between your client and server. Best of luck in your future CSE adventures! **
+
+![Gif](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
+
 
