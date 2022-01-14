@@ -69,9 +69,25 @@ class WhereAmI
 
 * Log in with the same password you use to log in with `ssh` when prompted for a password
 * Then log in to ieng6 with ssh again.
-* Using ls, you should be able to see the file you created in your directory! This means you'll be able to run your file from the Dungeon computer.
+* Using `ls`, you should be able to see the file you created in your directory! This means you'll be able to run your file from the Dungeon computer.
 
 
 #### **Step 5: Setting an SSH Key**
+Let's create an SSH Key so we don't have to re-type our password everytime we log in or run a `scp` command on this computer.
+* Run `ssh-keygen` on the terminal of your client computer
+* Then run on your terminal what you need to match the following:
 
+
+* Copy the public key to your `.ssh` directory by running the following, replacing with the appropriate names and path you saw in the command above:
+
+```
+ssh cs15lwi22zz@ieng6.ucsd.edu
+<Enter Password>
+# now on server
+$ mkdir .ssh
+$ <logout>
+# back on client
+$ scp /Users/joe/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys
+```
+            
 #### **Step 6: Optimizing Remote Running**
