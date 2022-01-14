@@ -107,7 +107,7 @@ Here's what youc ould see after trying both those commands:
 
 #### **And that's a wrap! With just a bit more practice, you'll be a pro at creating, moving, editing, and running files back and forth between your client and server. Best of luck in your future CSE adventures! **
 
-![Gif](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+[Gif](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 
 
 
