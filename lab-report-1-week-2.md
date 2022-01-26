@@ -105,9 +105,20 @@ Now you can use what you learned to make the process of remotely editing your pr
             ssh cs15lwi22zz@ieng6.ucsd.edu "ls"
             # this command will log in and list the home directory on the remote server
 
+This saves you a keystroke when compared to the following code, which takes 2 keystrokes to accomplish:
+            
+            $ ssh cs15lwi22zz@ieng6.ucsd.edu 
+            $ ls            
+
 * **use semicolons to run multiple commands** in the same line. Here's an example:
 
             cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI
+
+Compared to the following code, which takes 2 more keystrokes to accomplish:
+
+            $ cp WhereAmI.java OtherMain.java
+            $ javac OtherMain.java
+            $ java WhereAmI
 
 Here's what you could see after trying both those commands:
 
