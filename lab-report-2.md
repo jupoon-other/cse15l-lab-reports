@@ -1,7 +1,7 @@
 # **LAB REPORT 2**
 ### 01-28-2022
 
-[HOME](https://jupoon.github.io/cse15l-lab-reports/) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [LAB REPORT 1](https://jupoon.github.io/cse15l-lab-reports/lab-report-1-week-2.md)
+[HOME](https://jupoon.github.io/cse15l-lab-reports/) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [LAB REPORT 1](https://jupoon.github.io/cse15l-lab-reports/lab-report-1-week-2)
 
 #### **Code Failure 1: File with Image**
 * The first bug we found was when we run the code with a file that includes an image. The link to the test file with an image [here](https://github.com/jupoon/markdown-parse/commit/45b2fb3be4c3c3c2c1a5d0ca835b28a37eab3436#diff-5e1629e7c03be1693e513eb19ba88fd156b54d65a3275587ab6afeb297796508)
