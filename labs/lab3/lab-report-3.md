@@ -22,7 +22,7 @@ Open a new terminal and type in the command `~/.ssh/config`. It should then give
 
 Here is what my file looks like:
 
-![image]("ss_sshfile.png")
+![image](ss_sshfile.png)
 
 #### **Step 2: Log In With Your Username**
 Type in the command 
@@ -30,7 +30,7 @@ Type in the command
 
 You should see an output similar to this:
 
-![Image]("ss_loginoutput.png")
+![Image](ss_loginoutput.png)
 
 Now that you see how it works, you can now go back to your `~/.ssh/config` file and edit your Host from `ieng6` to be whichever name you'd like to access your ssh account! Below, I chose to edit Host to my name, JuliaPoon.
 
@@ -47,7 +47,7 @@ As we remember from [Lab Report 1](https://jupoon.github.io/cse15l-lab-reports/l
 
 And you can see here that this command is successful!
 
-![Image]("ss_scp.png")
+![Image](ss_scp.png)
 
 #### **Congrats! You have streamlined your SSH configuration!! Coding cat is very proud of you**
 
