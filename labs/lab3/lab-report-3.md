@@ -1,12 +1,7 @@
 # **LAB REPORT 3**
 ### 02-11-2022
 
-[HOME](https://jupoon.github.io/cse15l-lab-reports/) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [LAB REPORT 1](https://jupoon.github.io/cse15l-lab-reports/labs/lab1/lab-report-1-week-2) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [LAB REPORT 2](https://jupoon.github.io/cse15l-lab-reports/labs/lab2/lab-report-2)
-
-Streamlining ssh Configuration
-Show your .ssh/config file, and how you edited it (with VScode, another program, etc)
-Show the ssh command logging you into your account using just the alias you chose.
-Show an scp command copying a file to your account using just the alias you chose.
+[HOME](https://jupoon.github.io/cse15l-lab-reports/) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [LAB REPORT 1](https://jupoon.github.io/cse15l-lab-reports/labs/lab1/lab-report-1-week-2) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [LAB REPORT 2](https://jupoon.github.io/cse15l-lab-reports/labs/lab2/lab-report-2) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [LAB REPORT 4](https://jupoon.github.io/cse15l-lab-reports/labs/lab4/lab-report-4)
 
 
 ### **Streamlining SSH Configuration**
