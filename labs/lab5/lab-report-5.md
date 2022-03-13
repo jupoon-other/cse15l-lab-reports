@@ -17,3 +17,4 @@ and we can then use vim to look at results.txt where the output is stored.
 But out of all 652 test results, how do I check which results I have that differ from the professors? I ran this line of code in order
 
 `diff lab9/results.txt lab9_mine/results.txt`
+
