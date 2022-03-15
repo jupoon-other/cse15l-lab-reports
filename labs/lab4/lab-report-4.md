@@ -118,6 +118,10 @@ And there's still some more text after that.
 
 And then there's more text
 
+
+Meaning that the expected output of running it through MarkdownParse would be 
+`[https://ucsd-cse15l-w22.github.io/]`, just a single link.
+
 **************************************************
 
 Here are the tests I created in MarkdownParseTest.java for each of the three test snippets:
@@ -141,18 +145,7 @@ As you can see, the reviewed code from another group passed all the tests that i
 
 ***************************************************
 
-From the output of my tests, it looks like they produce the same error for all 3 test snippets --  that means there is a specific part in my code that is causing the index of out bounds exception. Looking at my code further, I can identify it as a problem occurring at the if statement and subsequent while loop at lines 36 and 39, respectively, where closeParen is not being updated properly. 
 
-Instead of having this condition as part of the while loop,
-
-`markdown.indexOf("\n",closeParen) != closeParen+1`
-
-it should be changed to this:
-
-`markdown.indexOf("\n",closeParen) != closeParen+2`
-
-
-However, this is just the start -- this small code change would fix the initial problem with my code and the out of bounds exception, but it does not necessarily mean this change will account for other problems not covered by my code in the test snippets. That would require a more involved change by examining the different cases and why/how they fail, if they should.
 
 
 *****************************************************
