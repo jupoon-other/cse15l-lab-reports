@@ -37,7 +37,7 @@ Our lab group's output should be correct, since the content within the brackets 
 
 * Example: a link like `www.my link.com` should be written as `www.my%20link.com` 
 
-This occurs because their implementation does not catch blank spaces that exist in potential links, which can be easily remedied through the use of `indexOf(" ")` to check whether or not the link substring within openBracket and closeBracket contains a blank space. We can also use `indexOf("%20")` to check for links that correctly have spaces written into them.
+This occurs because their implementation does not catch blank spaces that exist in potential links, which can be easily remedied through the use of `indexOf(" ")` to check whether or not the link substring within openParen and closeParen contains a blank space. We can also use `indexOf("%20")` to check for links that correctly have spaces written into them.
 
 
 #### **Test 495.md**
@@ -50,5 +50,16 @@ Our lab's output:
 
 `[foo(and(bar))]`
 
+Their output:
+
+`[foo(and(bar]`
+
+
+Our lab group's output should be correct, since it includes everything within the first and last parenthesis. Their implementation stops the collection of the substring at the first closeParen, which is not correct. To fix this, you can use the `indexOf()` method again to check for the last closing parenthesis before the next open bracket, and store everything between the first openParen and last closeParen to be printed in the output.
+
+
+### **With that, my CSE 15L career is over :3 Goodbye!**
+
+![gif](https://www.google.com/url?sa=i&url=https%3A%2F%2Fgiphy.com%2Fexplore%2Fcat-goodbye&psig=AOvVaw3RRYaafMd9qpKwMnvgkfHe&ust=1647400411026000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOC09feSx_YCFQAAAAAdAAAAABAa)
 
 
