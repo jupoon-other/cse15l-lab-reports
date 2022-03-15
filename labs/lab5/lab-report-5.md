@@ -6,7 +6,7 @@
 
 #### **Intro**
 
-Today we will be reviewing my lab groups code when ran with the commonmark-spec tests. To run the tests, we used something called bash scripting to run all 652. The command looks like this:
+Today we will be reviewing my lab group's code when ran with the commonmark-spec tests. To run the tests, we used something called bash scripting to run all 652. The command looks like this:
 
 `bash script.sh > results.txt`
 
@@ -18,5 +18,37 @@ But out of all 652 test results, how do I check which results I have that differ
 
 `diff lab9/results.txt lab9_mine/results.txt`
 
-Out of all the tests where there were code differences, I chose
+Out of all the tests where there were code differences, I chose test 32.md and 495.md
+
+#### **Test 32.md**
+This test file contains the following content:
+
+`[foo](/f&ouml;&ouml; "f&ouml;&ouml;")`
+
+Our lab's output: 
+
+`[]`
+
+Their output:
+
+`[/f&ouml;&ouml; "f&ouml;&ouml;"]`
+
+Our lab group's output should be correct, since the content within the brackets is not a valid link, containing a "space" character. When spaces appear in links, its should be formatted with %20 rather than a blank space, otherwise the link is not valid
+
+* Example: a link like `www.my link.com` should be written as `www.my%20link.com` 
+
+This occurs because their implementation does not catch blank spaces that exist in potential links, which can be easily remedied through the use of `indexOf(" ")` to check whether or not the link substring within openBracket and closeBracket contains a blank space. We can also use `indexOf("%20")` to check for links that correctly have spaces written into them.
+
+
+#### **Test 495.md**
+
+This test file contains the following content:
+
+`[link](foo(and(bar)))`
+
+Our lab's output:
+
+`[foo(and(bar))]`
+
+
 
