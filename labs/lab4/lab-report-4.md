@@ -118,10 +118,6 @@ And there's still some more text after that.
 
 And then there's more text
 
-
-Meaning that the expected output of running it through MarkdownParse would be 
-`[https://ucsd-cse15l-w22.github.io/]`, just a single link.
-
 **************************************************
 
 Here are the tests I created in MarkdownParseTest.java for each of the three test snippets:
@@ -145,7 +141,20 @@ As you can see, the reviewed code from another group passed all the tests that i
 
 ***************************************************
 
+#### **Questions**
 
+1. Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.
+
+* Yes, I think there is a small code change less than 10 lines that can make my program work for snippet 1. I would need to include code that takes into account for any pair of backticks that appear between a set of parenthesis. This also includes any backticks that appear before brackets. To do so, we can use `indexOf()` to search for pairs of backticks within each substring of the open and closing parenthesis for each link. We can also use it to search for any backticks that occur before the open brackets, and if there exists a second backtick on the same line. Using a while loop, remove the occurrences of links with backticks.
+
+
+2. Do you think there is a small (<10 lines) code change that will make your program work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets? If yes, describe the code change. If not, describe why it would be a more involved change.
+
+* No, I do not think there is a small code change that could fix my program for test snippet 2. Based on my test run, there is a string index out of bounds exception, which probably means the large amount of open and closing brackets/parenthesis aren't accounted for correctly by my implementation. I would first have to fix this issue of updating my openParen and closeParen variables correctly, before then figuring out how to identify the correct open & close parenthesis/brackets according to Markdown rules. One solution is to parse the test file into separate lines, and examine the code line by line for nested brackets and parenthesis. This code change cannot easily be done in under 10 lines.
+
+3. Do you think there is a small (<10 lines) code change that will make your program work for snippet 3 and all related cases that have newlines in brackets and parentheses? If yes, describe the code change. If not, describe why it would be a more involved change.
+
+* Similar to test snippet 2, I got a string index out of bounds exception when I tried to run my code with this test. However, even though it failed, I believe I can make a code change of less than 10 lines to solve this problem. In my current MarkdownParse implementation, I have a lot of code that checks for new lines to help update closeParen, and the index out of bounds exception is due to the fact that my code does not correctly update closeParen (due to the large amount of new lines) and causes it to check out of bounds. After I fix this, I can use the `indexOf()` method to check if there are new line breaks within each set of brackets and parenthesis; if there are, then we exit the current iteration of the while loop and look for the nextOpenBracket.
 
 
 *****************************************************
